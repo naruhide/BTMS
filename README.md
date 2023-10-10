@@ -1,5 +1,7 @@
-# BTMS
+## BTMS
 Baseball Team Management System
+<br>
+<br>
 
 ## Platform
 AWS
