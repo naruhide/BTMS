@@ -1,5 +1,6 @@
-## BTMS
+# BTMS
 Baseball Team Management System
+<br>
 <br>
 <br>
 
