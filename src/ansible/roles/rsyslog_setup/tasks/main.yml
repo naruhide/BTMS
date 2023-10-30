@@ -1,0 +1,2 @@
+- import_tasks: rsyslog_setup.yml
+  tags: rsyslog_setup

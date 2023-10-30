@@ -1,0 +1,9 @@
+- name: "install rsyslog"
+  dnf:
+    name: rsyslog
+    state: latest
+
+- name: "enable rsyslog"
+  systemd:
+    name: rsyslog 
+    enabled: true
