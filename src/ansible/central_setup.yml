@@ -7,5 +7,5 @@
     - group_vars/{{ env }}/central.yml
 
   roles:
+    - { role: dnf_update, tags: dnf_update }
     - { role: cloudwatch_setup, tags: cloudwatch_setup }
-    - { role: ssm_setup, tags: ssm_setup }
