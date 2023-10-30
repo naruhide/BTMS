@@ -1,0 +1,2 @@
+- import_tasks: cloudwatch_setup.yml
+  tags: cloudwatch_setup

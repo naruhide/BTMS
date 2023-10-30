@@ -1,14 +1,11 @@
 # BTMS
 Baseball Team Management System
-<br>
-<br>
-<br>
 
-## Platform
+### Platform
 AWS
 
-## System Component
+### System Component
 EC2 standalone
 
-## Middleware
+### Middleware
 Flask + MySQL

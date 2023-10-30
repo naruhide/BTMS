@@ -1,0 +1,2 @@
+- import_tasks: mysql_setup.yml
+  tags: mysql_setup

@@ -1,0 +1,2 @@
+- import_tasks: ssm_setup.yml
+  tags: ssm_setup

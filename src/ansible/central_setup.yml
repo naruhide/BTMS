@@ -1,0 +1,11 @@
+- hosts: [central]
+  connection: local
+  become: yes
+
+  vars_files:
+    - group_vars/{{ env }}/main.yml
+    - group_vars/{{ env }}/central.yml
+
+  roles:
+    - { role: cloudwatch_setup, tags: cloudwatch_setup }
+    - { role: ssm_setup, tags: ssm_setup }

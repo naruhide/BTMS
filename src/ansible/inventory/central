@@ -1,0 +1,5 @@
+[central]
+localhost ansible_connection=local
+
+[central:vars]
+group=central

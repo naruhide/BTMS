@@ -1,0 +1,2 @@
+- import_tasks: flask_setup.yml
+  tags: flask_setup

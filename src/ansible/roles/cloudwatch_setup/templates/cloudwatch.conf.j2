@@ -1,0 +1,22 @@
+{
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+{% for log in cw_logs %}
+          {
+            "file_path": "{{ log.file_path }}",
+            "log_group_name": "{{ env }}_btms_{{ group }}_{{ log.log_group_name }}",
+            "log_stream_name": "{{ log_stream_name }}",
+            "timestamp_format": "{{ log.timestamp_format }}"
+  {% if loop.last %}
+          }
+  {% else %}
+          },
+  {% endif %}
+{% endfor %}
+        ]
+      }
+    }
+  }
+}

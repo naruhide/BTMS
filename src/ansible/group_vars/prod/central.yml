@@ -1,0 +1,5 @@
+cw_logs:
+  - file_path: "/var/log/messages"
+    log_group_name: "/var/log/messages"
+    log_stream_name: "{instance_id}" 
+    timestamp_format: "%Y/%m/%d %H:%M:%S"

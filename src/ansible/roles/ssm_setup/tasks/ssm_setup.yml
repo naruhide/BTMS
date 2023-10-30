@@ -1,0 +1,9 @@
+- name: "install ssm agent"
+  dnf:
+    name: amazon-ssm-agent
+    state: latest
+
+- name: "enable ssm agent"
+  systemd:
+    name: amazon-ssm-agent
+    enabled: true
