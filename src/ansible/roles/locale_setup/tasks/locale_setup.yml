@@ -3,5 +3,5 @@
   changed_when: false
 
 - name: "set keymap"
-  command: localectl set-keymap jp106
+  command: localectl set-keymap jp
   changed_when: false
