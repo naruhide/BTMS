@@ -15,4 +15,8 @@
     owner: root
     group: root
     mode: 0644
-  notify: restart cloudwatch agent
+
+- name: "restart cloudwatch agent"
+  systemd:
+    name: amazon-cloudwatch-agent
+    state: restarted
