@@ -1,6 +1,9 @@
-- hosts: [central]
+- hosts: all
   connection: local
   become: yes
+
+  vars:
+    group: central
 
   vars_files:
     - group_vars/{{ env }}/main.yml
