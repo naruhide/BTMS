@@ -1,4 +1,0 @@
-- name: "dnf update"
-  dnf:
-    name: "*"
-    state: latest

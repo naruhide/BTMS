@@ -7,6 +7,7 @@
     - group_vars/{{ env }}/central.yml
 
   roles:
-    - { role: dnf_update, tags: dnf_update }
     - { role: rsyslog_setup, tags: rsyslog_setup }
     - { role: cloudwatch_setup, tags: cloudwatch_setup }
+    - { role: locale_setup, tags: locale_setup }
+    - { role: timezone_setup, tags: timezone_setup }

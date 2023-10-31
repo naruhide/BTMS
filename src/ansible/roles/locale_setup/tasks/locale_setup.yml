@@ -1,0 +1,7 @@
+- name: "set locale"
+  command: localectl set-locale LANG=ja_JP.UTF-8
+  changed_when: false
+
+- name: "set keymap"
+  command: localectl set-keymap jp106
+  changed_when: false

@@ -1,2 +1,0 @@
-- import_tasks: dnf_update.yml
-  tags: dnf_update 

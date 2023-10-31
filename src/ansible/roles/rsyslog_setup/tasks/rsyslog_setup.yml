@@ -3,7 +3,7 @@
     name: rsyslog
     state: latest
 
-- name: "enable rsyslog"
+- name: "restart rsyslog"
   systemd:
     name: rsyslog 
-    enabled: true
+    state: restarted

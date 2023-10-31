@@ -1,0 +1,2 @@
+- import_tasks: locale_setup.yml
+  tags: locale_setup
