@@ -3,7 +3,15 @@
     key: https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
     state: present
 
+- name: "copy mysql repository rpm"
+  copy:
+    src: files/mysql80-community-release-fc38-3.noarch.rpm
+    dest: /root/mysql80-community-release-fc38-3.noarch.rpm
+    owner: root
+    group: root
+    mode: "0644"
+
 - name: "install mysql repository"
   dnf:
-    name: https://dev.mysql.com/get/mysql80-community-release-fc38-3.noarch.rpm
+    name: /root/mysql80-community-release-fc38-3.noarch.rpm
     state: present
