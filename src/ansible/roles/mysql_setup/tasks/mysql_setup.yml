@@ -1,4 +1,9 @@
+- name: "install mysql gpg-key"
+  rpm_key:
+    key: https://repo.mysql.com/RPM-GPG-KEY-mysql-2022
+    state: present
+
 - name: "install mysql repository"
   dnf:
-    name: files/mysql80-community-release-fc38-3.noarch.rpm
+    name: https://dev.mysql.com/get/mysql80-community-release-fc38-3.noarch.rpm
     state: present
