@@ -20,3 +20,4 @@
   systemd:
     name: amazon-cloudwatch-agent
     state: restarted
+  changed_when: false

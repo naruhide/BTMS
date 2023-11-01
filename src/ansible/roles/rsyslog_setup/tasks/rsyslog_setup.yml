@@ -7,3 +7,4 @@
   systemd:
     name: rsyslog 
     state: restarted
+  changed_when: false
