@@ -14,3 +14,4 @@
     - { role: cloudwatch_setup, tags: cloudwatch_setup }
     - { role: locale_setup, tags: locale_setup }
     - { role: timezone_setup, tags: timezone_setup }
+    - { role: mysql_setup, tags: mysql_setup }
