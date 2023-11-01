@@ -1,3 +1,4 @@
-- name: "xxx"
-
-- name: "xxx"
+- name: "install mysql repository"
+  dnf:
+    name: files/mysql80-community-release-fc38-3.noarch.rpm
+    state: present
